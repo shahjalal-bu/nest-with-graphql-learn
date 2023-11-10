@@ -1,10 +1,9 @@
 ### Setup
 
-````js
-
+```bash
 npm i @nestjs/graphql @nestjs/apollo @apollo/server graphql
-
 ```
+
 ### 1. Implement App.module.ts
 
 **src\app.resolver.ts:**
@@ -27,7 +26,7 @@ import { AppService } from "./app.service";
   providers: [AppService],
 })
 export class AppModule {}
-````
+```
 
 ## Nest with graphql has two approach.
 
