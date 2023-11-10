@@ -1,7 +1,9 @@
-## Setup
+### Setup
 
-````bash
+````js
+
 npm i @nestjs/graphql @nestjs/apollo @apollo/server graphql
+
 ```
 ### 1. Implement App.module.ts
 
