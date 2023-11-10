@@ -1,0 +1,14 @@
+enum Status {
+  Doing
+  Done
+}
+
+type Todo {
+  id: ID!
+  text: String!
+  status: Status!
+}
+
+type Query {
+  todos: [Todo]
+}
