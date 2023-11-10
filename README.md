@@ -1,39 +1,4 @@
-### Setup
-
-```bash
-npm i @nestjs/graphql @nestjs/apollo @apollo/server graphql
-```
-
-### 1. Implement App.module.ts
-
-**src\app.resolver.ts:**
-
-```typescript
-import { GraphQLModule } from "@nestjs/graphql";
-import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
-import { Module } from "@nestjs/common";
-import { AppController } from "./app.controller";
-import { AppService } from "./app.service";
-
-@Module({
-  imports: [
-    GraphQLModule.forRoot<ApolloDriverConfig>({
-      driver: ApolloDriver,
-      playground: true,
-    }),
-  ],
-  controllers: [AppController],
-  providers: [AppService],
-})
-export class AppModule {}
-```
-
-## Nest with graphql has two approach.
-
-- Schema First approach
-- Code First Approach
-
-<!-- ### Code First Approach: In the code first approach, you use TypeScript classes and decorators to generate the GraphQL schema. This approach is more convenient and efficient, but it can be less flexible than the schema first approach.
+### Code First Approach: In the code first approach, you use TypeScript classes and decorators to generate the GraphQL schema. This approach is more convenient and efficient, but it can be less flexible than the schema first approach.
 
 #### 1. Define GraphQL Schema using TypeScript Decorators
 
