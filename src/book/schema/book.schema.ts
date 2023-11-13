@@ -6,6 +6,6 @@ export class Book {
   id: number;
   @Field()
   title: string;
-  @Field((type) => Int, { nullable: true })
+  @Field((type) => Int)
   price: number;
 }
